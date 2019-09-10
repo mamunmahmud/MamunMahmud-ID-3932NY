@@ -2,9 +2,10 @@ package design;
 
 import java.util.Scanner;
 
-public class EmployeeInfo {
-	
- /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
+public class EmployeeInfo extends EmployeeChoice  implements Employee {
+
+
+	/*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
  * then inherit that abstract class into EmployeeInfo class.Once you done with designing EmployeeInfo class,
  * go to FortuneEmployee class to apply all the fields and attributes.
@@ -33,12 +34,21 @@ public class EmployeeInfo {
 	 * Must implement below constructor.
 	 */
 	public EmployeeInfo(int employeeId){
-		
+
+
+
 	}
     public EmployeeInfo(String name, int employeeId){
 		
+
+
+
 	}
-	
+
+	public EmployeeInfo() {
+
+	}
+
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.
@@ -75,6 +85,66 @@ public class EmployeeInfo {
 
 		return total;
 	}
+
+	@Override
+	public int employeeId() {
+
+
+
+
+
+		return 0;
+	}
+
+	@Override
+	public String employeeName() {
+		return null;
+	}
+
+	@Override
+	public void assignDepartment() {
+
+		System.out.println("testing department");
+
+
+	}
+
+	@Override
+	public int calculateSalary() {
+		return 0;
+	}
+
+	@Override
+	public void benefitLayout() {
+
+		System.out.println("benifit layout is impressive");
+
+	}
+
+
+	@Override
+	public void employeeAge() {
+
+		System.out.println("forty");
+
+	}
+
+	@Override
+	public void employeeHeight() {
+		System.out.println("5 feet");
+	}
+
+	@Override
+	public void employeeHobie() {
+
+		System.out.println("play soccer");
+
+	}
+
+
+
+
+
 	private static class DateConversion {
 
 		public DateConversion(Months months){}

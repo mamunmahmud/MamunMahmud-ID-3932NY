@@ -42,7 +42,7 @@ public class JsonReaderUtil {
         URL url = new URL(sURL);
         URLConnection request = url.openConnection();
         request.connect();
-        JsonArray  jsonArray = null;
+        JsonArray jsonArray = null;
         JsonParser jp = new JsonParser();
         JsonElement root = jp.parse(new InputStreamReader((InputStream) request.getContent()));
         if (root instanceof JsonObject) {

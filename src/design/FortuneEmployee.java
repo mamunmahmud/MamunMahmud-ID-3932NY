@@ -16,6 +16,19 @@ public class FortuneEmployee {
 	public static void main(String[] args) {
 		
 
+     EmployeeInfo info= new EmployeeInfo();
+
+
+
+
+
+
+
+
+          info.assignDepartment();
+		   info.benefitLayout();
+
+
 
 	}
 
