@@ -73,7 +73,7 @@ public class Sort {
         return list;
     }
     
-    public int [] heapSort(int [] array){
+    public int [] heapSort(int[] array, int length){
         int [] list = array;
         //implement here
         
@@ -83,7 +83,7 @@ public class Sort {
     }
 
 
-    public int [] bucketSort(int [] array){
+    public int [] bucketSort(int[] array, int i){
         int [] list = array;
         //implement here
         

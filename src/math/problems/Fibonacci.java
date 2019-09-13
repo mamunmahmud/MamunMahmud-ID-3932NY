@@ -18,6 +18,6 @@ public class Fibonacci {
       prev=next-prev;
 
    }
-ggkgkkhkhkhk
+
     }
 }

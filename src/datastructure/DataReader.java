@@ -1,5 +1,8 @@
 package datastructure;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+
 public class DataReader {
 
 	public static void main(String[] args) {
@@ -18,7 +21,45 @@ public class DataReader {
 		 * Use For Each loop/while loop/Iterator to retrieve data.
 		 */
 
-		String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+		//String textFile = System.getProperty("user.dir") + "/src/data/self-driving-car.txt";
+
+       FileReader fr= null;
+       BufferedReader br= null;
+
+		String fileName ="/Users/mamunmahmud/IdeaProjects/MidtermJuly2019/src/datastructure/hello.txt.rtf";
+
+		try {
+
+			fr=new FileReader(fileName);
+			br=new BufferedReader(fr);
+
+			String data="";
+			while ((data = br.readLine())!=null){
+
+				System.out.println(data);
+			}
+
+
+		}catch(Exception ex){
+
+			System.out.println("file was not found");
+		}
+
+		finally {
+
+			try {
+				fr.close();
+				br.close();
+
+
+			}catch (Exception e){
+
+			}
+
+
+
+		}
+
 
 
 
